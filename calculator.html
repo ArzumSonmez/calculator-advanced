@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div><!--Display for result-->
+    <p class="js-result">0</p>
+    <!--Buttons for 1-2-3 and (+)-->
+    </div>
+    <p>
+      <button class="number-Button" onclick="appendNumber(1)">1</button>
+      <button class="number-Button" onclick="appendNumber(2)">2</button>
+      <button class="number-Button" onclick="appendNumber(3)">3</button>
+      <button class="operator-Button" onclick="getOperator('+')">+</button>
+    </p>
+    <!--Buttons for 4-5-6 and (-)-->
+    <p>
+      <button class="number-Button" onclick="appendNumber(4)">4</button>
+      <button class="number-Button" onclick="appendNumber(5)">5</button>
+      <button class="number-Button" onclick="appendNumber(6)">6</button>
+      <button class="operator-Button" onclick="getOperator('-')">-</button>
+    </p>
+    <!--Buttons for 7-8-9 and (*)-->
+    <p>
+      <button class="number-Button" onclick="appendNumber(7)">7</button>
+      <button class="number-Button" onclick="appendNumber(8)">8</button>
+      <button class="number-Button" onclick="appendNumber(9)">9</button>
+      <button class="operator-Button" onclick="getOperator('*')">*</button>
+    </p>
+    <!--Buttons for (.), 0, (=) and (/)-->
+    <p>
+      <button class="number-Button"onclick="appendNumber('.')">.</button>
+      <button class="number-Button" onclick="appendNumber(0)">0</button>
+      <button class="number-Button"onclick="calculation()">=</button>
+      <button class="operator-Button" onclick="getOperator('/')">/</button>
+    </p>
+    <!--Button for clearing display-->
+    <p>
+      <button class="clear-Button" onclick="clearDisplay()">Clear</button>
+    </p>
+
+  <script src="calculator.js"></script>
+</body>
+</html>
